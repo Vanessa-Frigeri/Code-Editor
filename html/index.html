@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Code Editor</title>
+</head>
+
+<body>
+    <div class="container__principal">
+        <header class="header">
+            <img id="header__logo" src="../img/Logo.svg" alt="Logotipo Code Editor">
+            <input id="header__search" type="text">
+            <div class="header__profile">
+                <img id="profile__img" src="../img/user.svg" alt="">
+                <label id="profile__label" for="">Nome do Perfil</label>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__menu">
+                <a id="menu__title" href="">Menu</a>
+                <div class="menu__editor">
+                    <button id="editor__button"></button>
+                    <a id="editor__link" href="">Editor de Código</a>
+                </div>
+                <div class="menu__comunity">
+                    <button id="comunity__button"></button>
+                    <a id="comunity__link" href="">Comunidade</a>
+                </div>
+            </div>
+            <div class="main__codeEditor">
+                <div class="codeEditor__colorfulButtons">
+                    <div class="colorfulButtons__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+                                <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+                                <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+                                <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                    <code id="codeEditor__code" contenteditable="true">Editor de Codigos para escrita</code>
+                </div>
+                <button id="codeEditor__button">Visualizar com Highlight</button>
+            </div>
+            <div class="main__formProject">
+                <form id="formProject_form" action="">
+                    <label id="formProject_label" for="">Seu Projeto</label>
+                    <div class="formProject__nameProject">
+                        <input id="nameProject__txt" type="text">
+                        <label id="nameProject__label" for="">Nome do Projeto</label>
+                    </div>
+                    <div class="formProject__descriptionProject">
+                        <textarea id="descriptionProject_textarea" name="" id="" cols="30" rows="10"></textarea>
+                        <label id="descriptionProject__label" for="">Descrição do seu projeto</label>
+                    </div>
+                </form>
+                <div class="formProject__customize">
+                    <label id="customize__label" for="">Personalização</label>
+                    <select name="" id="customize__select">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="C++">C++</option>
+                        <option value="C">C</option>
+                    </select>
+                    <input id="customize__colorPicker" type="color" value="#6BD1FF">
+                    <button id="customize__button">Salvar Projeto</button>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
